@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A4j-qR-AxS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--冲印订单-->
+        <scene sceneID="Dg8-Tu-1sF">
+            <objects>
+                <viewController id="jY3-PU-Lef" customClass="PrintingController" customModule="AfternoonTea" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iWb-TQ-fpP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.89411764709999997" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="zSk-1r-7Wj"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="冲印订单" image="printing" selectedImage="printing_sel" id="liN-F9-cgK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ia-eK-Gs9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1414" y="824"/>
+        </scene>
+        <!--电子订单-->
+        <scene sceneID="43z-zn-TG6">
+            <objects>
+                <viewController id="6BU-K7-aFr" customClass="StorageController" customModule="AfternoonTea" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="naq-ub-ZLL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.3411764706" green="0.3411764706" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="8HW-tt-trp"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="电子订单" image="storage" selectedImage="storage_sel" id="jDb-Py-ZTq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lp1-E7-Mpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="412"/>
+        </scene>
+        <!--客服-->
+        <scene sceneID="6pZ-SP-X3O">
+            <objects>
+                <viewController id="jXv-vm-IWd" customClass="CustomController" customModule="AfternoonTea" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tCU-Kc-4qZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="3ol-6w-3WU"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="客服" image="custom" selectedImage="custom_sel" id="hSa-BZ-ed1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Cb-71-yGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-967" y="-769"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="b7o-cB-rrK">
+            <objects>
+                <viewController id="PP0-tu-Pyo" customClass="ViewController" customModule="AfternoonTea" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ul8-GE-Uxa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.12549019610000001" green="0.59215686270000001" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="MxE-o5-FYZ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="首页" image="home" selectedImage="home_sel" id="nvk-cH-dIV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GOv-kl-nM6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="-253"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ol0-fA-CMf">
+            <objects>
+                <navigationController id="A4j-qR-AxS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pTn-hv-zMg">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vyh-uw-eT4" kind="relationship" relationship="rootViewController" id="Gui-S6-EYd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q47-0G-3Wr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1964" y="80"/>
+        </scene>
+        <!--智能证件照-->
+        <scene sceneID="lLp-XQ-1tc">
+            <objects>
+                <tabBarController id="vyh-uw-eT4" customClass="GrandController" customModule="AfternoonTea" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="智能证件照" id="6Ca-W6-q2v"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pPE-iK-gya">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="myTabar" destination="pPE-iK-gya" id="VSe-u8-Qfd"/>
+                        <segue destination="PP0-tu-Pyo" kind="relationship" relationship="viewControllers" id="bxh-dw-uOO"/>
+                        <segue destination="6BU-K7-aFr" kind="relationship" relationship="viewControllers" id="Dgw-N1-9VD"/>
+                        <segue destination="jY3-PU-Lef" kind="relationship" relationship="viewControllers" id="eUb-ZK-RcR"/>
+                        <segue destination="jXv-vm-IWd" kind="relationship" relationship="viewControllers" id="SxV-gO-Fa7"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iCV-ep-Jol" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1037" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="custom" width="21" height="22"/>
+        <image name="custom_sel" width="21" height="22"/>
+        <image name="home" width="22" height="21"/>
+        <image name="home_sel" width="22" height="21"/>
+        <image name="printing" width="19" height="21"/>
+        <image name="printing_sel" width="19" height="21"/>
+        <image name="storage" width="19" height="21"/>
+        <image name="storage_sel" width="19" height="21"/>
+    </resources>
+</document>
