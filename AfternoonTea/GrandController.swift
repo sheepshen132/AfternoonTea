@@ -6,7 +6,6 @@ class GrandController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
         myTabar.shadowImage = UIImage()
         myTabar.backgroundImage = UIImage()
         myTabar.isTranslucent = false
@@ -14,5 +13,9 @@ class GrandController: UITabBarController {
 
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         self.navigationItem.title = item.title
+
+        let a = Devices.Iphone5s
+        let b = a.rawValue
+        print("the phone size string is \(a), width is \(b.width), height is \(b.height)")
     }
 }
