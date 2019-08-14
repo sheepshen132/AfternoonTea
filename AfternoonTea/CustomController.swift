@@ -14,5 +14,5 @@ class CustomController: BaseViewController {
 }
 
 extension CustomController: TableDelegate {
-    
+
 }
