@@ -1,5 +1,12 @@
 import UIKit
 
+struct AnimationKeys {
+    static let gravity = "transform.translation.y"
+    static let scale = "transform.scale"
+    static let rotation = "transform.rotation.z"
+    static let translation = "transform.translation.y"
+}
+
 class GrandController: UITabBarController {
 
     @IBOutlet weak var myTabar: UITabBar!
@@ -43,7 +50,7 @@ class GrandController: UITabBarController {
 
     // 重力动画
     func gravityAnimationBy(view: UIView) {
-        let animation = CAKeyframeAnimation(keyPath: "transform.translation.y")
+        let animation = CAKeyframeAnimation(keyPath: AnimationKeys.gravity)
         animation.values = [0.0, -4.15, -7.26, -9.34, -10.37, -9.34,
                             -7.26, -4.15, 0.0, 2.0, -2.9, -4.94, -6.11,
                             -6.42, -5.86, -4.44, -2.16, 0.0]
@@ -54,7 +61,7 @@ class GrandController: UITabBarController {
 
     // 放大-缩小
     func scaleAnimationBy(view: UIView) {
-        let animation = CABasicAnimation(keyPath: "transform.scale")
+        let animation = CABasicAnimation(keyPath: AnimationKeys.scale)
         animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
         animation.duration = 0.2
         animation.repeatCount = 1
@@ -66,7 +73,7 @@ class GrandController: UITabBarController {
 
     // Z轴旋转
     func rotationAnimationBy(view: UIView) {
-        let animation = CABasicAnimation(keyPath: "transform.rotation.z")
+        let animation = CABasicAnimation(keyPath: AnimationKeys.rotation)
         animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
         animation.duration = 0.2
         animation.repeatCount = 1
@@ -78,7 +85,7 @@ class GrandController: UITabBarController {
 
     // Y轴位移
     func translationAnimationBy(view: UIView) {
-        let animation = CABasicAnimation(keyPath: "transform.translation.y")
+        let animation = CABasicAnimation(keyPath: AnimationKeys.translation)
         animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
         animation.duration = 0.2
         animation.repeatCount = 1
@@ -90,7 +97,7 @@ class GrandController: UITabBarController {
 
     // 放大并保持
     func bigAnimationBy(view: UIView) {
-        let animation = CABasicAnimation(keyPath: "transform.scale")
+        let animation = CABasicAnimation(keyPath: AnimationKeys.scale)
         animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
         animation.duration = 0.2
         animation.repeatCount = 1
